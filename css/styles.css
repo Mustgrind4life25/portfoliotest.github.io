@@ -285,7 +285,7 @@ form label{
 }
 
 #form-btn:hover{
-	background-color: #000;
+	background-color: lightgray;
 	color: #fff;
 }
 
