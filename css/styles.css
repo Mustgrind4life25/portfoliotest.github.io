@@ -338,6 +338,9 @@ footer{
 	.skills-list{
 		flex-wrap: wrap;
 	}
+	.dev-header{
+		font-size: 3rem;
+	}
 }
 
 
