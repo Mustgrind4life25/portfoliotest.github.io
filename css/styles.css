@@ -333,7 +333,14 @@ footer{
     flex: 1;       /* same as flex-grow: 1; */
 }
 
-/* media queries */
+/* media queries *
+@media screen and (max-width: 660px){
+	.skills-list{
+		flex-wrap: wrap;
+	}
+}
+
+
 @media screen and (max-width: 950px){
 	.bio-container{
 		flex-wrap: wrap;
