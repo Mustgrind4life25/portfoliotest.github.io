@@ -3,184 +3,135 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!---Google fonts--->
+	<title>My Portfolio</title>
+	<!--Google fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 	<!--My stylesheet-->
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>Portfolio project one</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-	<div class="container">
-		
-
-		<!--top image section-->
-		<section id="top-image">
-			<header id="main-image-container">
-				<div class="background-img">
-					<div class="dev-header-container">
-						<h1 class="dev-header">Hi, I'm James!</h1>
-						<p class="dev-para">Email Developer</p>
-					</div>
-				</div>
-
-				<!--navbar section-->
-				<div class="nav-container">
-					<nav class="nav-link-wrapper">
-						<a class="nav-links" href="#contact">contact</a>
-						<a class="nav-links" href="#bio">bio</a>
-						<a class="nav-links" href="#project">projects</a>
-					</nav>
-				</div>
-			</header>
-		</section>
-
-		<!--Bio section-->
-		<section id="bio">
-			<div class="bio-container">
-				<p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<!--MAKE THIS SKILL SECTION INSTEAD OF IMAGE-->
-			</div>
-		</section>
-
-
-		<div class="skills-header">
-			<h1>Skills</h1>
+	
+	<!--Header section-->
+	<section id="top-header">
+		<div class="logo-container">
+			<img class="my-logo" src="https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/js-white-logo.png?raw=true">
 		</div>
-		<section id="skills">
-			<div class="skills-container">
-				<div class="skills-icons">
-					<ul class="skills-list">
-						<li>
-							<h3>HTML</h3>
-							<img class="icon-img" src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/html5.png?raw=true" alt="">
-						</li>
-						<li>
-							<h3>CSS</h3>
-							<img class="icon-img" src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/css-icon.png?raw=true" alt="">
-						</li>
-						<li>
-							<h3>JS</h3>
-							<img class="icon-img" src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/javascripticon.png?raw=true" alt="">
-						</li>
-						<li>
-							<h3>SUBLIME 3</h3>
-							<img class="icon-img" src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/sublimetext.png?raw=true" alt="">
-						</li>
-						<li>
-							<h3>Litmus</h3>
-							<img class="icon-img" src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/email-onacid.png?raw=true" alt="">
-						</li>
-						<li>
-							<h3>GIMP</h3>
-							<img class="icon-img" src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/gimp-icon.png?raw=true" alt="">
-						</li>
-						
-					</ul>
-				</div>
-			</div>
-		</section>
+		<ul class="flex-container" id="nav-list">
+			<li class="list-item"><a class="push" href="#bio-skills">Home</a></li>
+			<li class="list-item"><a href="#projects">Projects</a></li>
+			<li class="list-item"><a href="#contact"><span class="hire-btn">Hire Me</span></a></li>
+		</ul>
 
-		<div class="project-header-container">
-			<h1>Projects</h1>
+		<div class="menu" id="toggle-btn">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
 		</div>
-		<!--project section-->
-		<section id="project">
-			<div class="card">
-				<div class="card-img card-1"></a></div>
-				<h2>Promotional Email</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
-				<a class="bio-btn" href="https://mustgrind4life25.github.io/nikepromo.github.io/" target="_blank">View</a>
+	</section>
+
+	<!---Name Header--->
+	<section id="name-header">
+		<div class="header-name">
+			<h1>Julian Smith</h1>
+		</div>
+	</section>
+
+	<!---Bio section--->
+	<section id="bio-skills">
+
+		<div class="bio-skills-container">
+			<div class="bio-paragraph">
+				<h3 class="header-skills">About Me</h3>
+				<p class="header-skills-para">Hi, I'm a self taught developer. I enjoy coding and learning new web technologies.</p>
+			</div>
+			<div class="skills">
+				<h1 class="header-skills">Skills</h1>
+
+				<!--html icon-->
+				<a  href="https://www.freepnglogos.com/pics/html5-logo" title="Image from freepnglogos.com"><img class="skills-icon" src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-file-html-logo-black-svg-wikimedia-commons-1.png" width="200" alt="html5 logo, file html logo black svg wikimedia commons" /></a>
+
+				<!--css icon-->
+				<img class="skills-icon" src="https://cdn.iconscout.com/icon/free/png-256/css-124-624920.png" alt="">
+
+			
+				<!---sass icon--->
+				<img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEgklEQVRoge3aW4hVZRQH8J95mRk1L4kzBFlS0VWLKKMoM7I0K7GHCkvyqSKiKOyphy4QBWpQVohBURQUYQ9RlgoGSgaDXaiodDTS1LByIG+ROur08O3D2XPc+5y999kz+uAfFjPss9Z/f//zfXt961v7cAonFwaVyDUW03AdLsF5aMeI6PN/8Rd+wy9Yj3XYU+IYCqMF87AaR9Cb045gJe6LuAYcbViAPzIMNqvtxBNoHSgRs/BriQJqbQtm9qeAFizpRwG19q4w86WiA98MoIiKbRASRimYKEz3QIuo2OZoDE2hoyQR3fgQD+JanIWhOAMXYjpewI46YgrPTKvmllMPPsZtGJzxnsPwHI4l8G1QMEUvLSjgUBR7dgpvB27BfDyEu3Fpjc+TKdyv5RUxq6CI9zAhgW8qXhF29bTYH3FV5H8atqb4zcgqok3+fWKzsM7jGCJ869/l4NmpWja9X+demZbYgpwiPsLIGo45Qj1VZFY7Io5ldXwebySiRb6y42l9C8+J+KKggF7sE5YVoQZL89uhwazMy3HTZ2pi50cDKSqiF69GXCNxoIHvvfWErM54w2WxmEF4sUkBvcJKqCyrxzL4f54mYqxspXiXkO8reL4EEXtxTcTXjt0ZYnowKknInRlvenssZmYJIrZhcsQ3DGtzxM5OEvJShsDfa2J+SPH7JwPXISxUzXjDheWS50tYlCRkRYbAd2L+Z9bxexlPJQg6iE4hxY+PcV2Jn3OK6MWnSUI25xRyRR2/HjwgbIqTooFOFgrFCobiJizH0QIierGpQhbfA7oxLklhDLuEEuQoxuBP9fP5t0LhuEUoBNtwbiRqOkY3uF8jdOs7swhrNsu38EgspmhhWZYdTFKXVcg+XB7FDBfK65NKSHcOgl2qKXM01pwgIbuThHTlJNmrmscHY7HkA1F/2sYkIVnSb60dEzorlV7UPNmXaBn2SZKQxU0Qfo+LIp4bhf1jj7BhrsVX0s/jzdjCJCFzmiQ9gPsjrrGq5Xgck/BBiULuSBIyRrH+bcWW4/wY33x8LcxKJ94WnqlB0s/keeywlKIRVhUg3Ipbo/gpeDP6/54U/zU4Xf66qtZWpIkgdMXzkK0UelNDhPV6FP9FXNfXiVuEu5oUMreekBahAZCFaKnwHLTpm/G2RVw31Ind0uDzRrZd3zPRcQ/kIaGcb4R1eFRIv0v1PaOsj/7W9qri+MnxXZc8WCw8I3XRqnGbdFrke3XN9T2qjbm0fakTDwvlRZHZ2CRHx7Heye+wagv02dj1A6ozc5n0Xb6ZDfMYbs4qooLXU8gOxoTMFlLsW7ggujZO8Z5WI1uSVwRh+tIq21kpMRPqxDRrnWoe8Dxol3xy3CZM8QjhmZoipN/9/SSiS8IBKi8mpogZKOvCOc2KqKDdiTlAdSphJmpReRk6UGeON/Tzu/cZ+nepbVIgxRZFi9DaL/OMsV3o+Z6QX0C0CF3xz4ReVt7B9wgVwFxNpFbK/VHNKKF0mYqLhbPJeKFkJ6Tmv4W3YRvxpVCz7S9xDKdw0uB/i3hkmxMnAicAAAAASUVORK5CYII=">
+
+				<!---javascript icon--->
+				<a href="https://www.freepnglogos.com/pics/javascript" title="Image from freepnglogos.com"><img class="skills-icon" src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-24.png" width="200" alt="javascript logo" /></a>
+
+				<!--sublime icon-->
+				<img class="skills-icon" src="https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/sublime-logo.png?raw=true" alt="sublime text 3" title="sublime text 3">
+				
+			</div>
+		</div>
+	<section>
+
+
+	<!-- <section id="projects-btn">
+		<span><a class="projects-btn" href="#">View Projects</a></span>
+	</section> -->
+
+
+	<!---Project section--->
+	<section id="projects">
+		<h1 class="portfolio-header">Projects</h1>
+		<div class="projects-container">
+			<div class="card nike">
+				<h3 class="card-headers">Promotional</h3>
+				<a href="https://mustgrind4life25.github.io/nikepromo.github.io/" target="_blank"><img src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/nike-pic-fliex.JPG?raw=true" alt=""></a>
 			</div>
 
-			<div class="card">
-				<div class="card-img card-2"></div>
-				<h2>Promotional Email</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
-				<a class="bio-btn" href="https://mustgrind4life25.github.io/promotional.github.io/" target="_blank">View</a>
+			<div class="card chewy">
+				<h3 class="card-headers">Promotional</h3>
+				<a href="https://mustgrind4life25.github.io/chewy.github.io/" target="_blank"><img src="https://github.com/Mustgrind4life25/chewy.github.io/blob/main/chewy-pic.PNG?raw=true" alt=""></a>
 			</div>
 
-			<div class="card">
-				<div class="card-img card-3"></div>
-				<h2>Transactional Email</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
-				<a class="bio-btn" href="https://mustgrind4life25.github.io/transactional.github.io/" target="_blank">View</a>
+			<div class="card footlocker">
+				<h3 class="card-headers">Promotional</h3>
+				<a href="https://mustgrind4life25.github.io/footlocker.github.io/" target="_blank"><img src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/footlocker-email-pic.PNG?raw=true" alt=""></a>
 			</div>
 
-			<div class="card">
-				<div class="card-img card-4"></div>
-				<h2>Landing Page</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="bio-btn" href="https://mustgrind4life25.github.io/Luxurymotors.github.io/" target="_blank">View</a>
+			<div class="card transactional">
+				<h3 class="card-headers">Transactional</h3>
+				<a href="https://mustgrind4life25.github.io/transactional.github.io/" target="_blank"><img src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/sneakercloset-img.JPG?raw=true" alt=""></a>
 			</div>
-		</section>
 
-		<!--contact section-->
-		<section id="contact">
-			<div class="contact-container">
-				<form id="myform">
-					<h1 class="contact-header">Contact Me</h1>
-					<label>Name:</label>
-					<input id="name" type="text" name="name">
-					<label>Email:</label>
-					<input id="email" type="email" name="email">
-					<label>Message:</label>
-					<textarea name="text" id="message" cols="30" rows="10"></textarea>
-					<a id="form-btn" href="#">Submit</a>
-				</form>
+			<div class="card landing">
+				<h3 class="card-headers">Landing page</h3>
+				<a href="https://mustgrind4life25.github.io/Luxurymotors.github.io/" target="_blank"><img src="https://github.com/Mustgrind4life25/portfoliotest.github.io/blob/main/img/luxurymotors-website-img.JPG?raw=true" alt=""></a>
 			</div>
-		</section>
-		
-		<!--footer section-->
-		<section id="footer">
-			<footer>
-				<!-- <div class="footer-container"></div> -->
-				<!---footer main-->
-				<section class="ft-social">
-					<ul class="ft-social-list"> 
-						<li><a href="#/"><img class="social-links" src="img/linkedin.png" alt=""></a></li>
-						<li><a href="#/"><img class="social-links" src="img/github.png" alt=""></a></li>
-						<li><a href="#/"><img class="social-links" src="img/facebook(1).png" alt=""></a></li>
-						<li><a href="#/"><img class="social-links" src="img/instagram(1).png" alt=""></a></li>
-						<li><a href="#/"><img class="social-links" src="img/twitter(1).png" alt=""></a></li>
-					</ul>
-				</section>
 
-				<!--Legal section-->
-				<section class="ft-legal">
-					<ul class="ft-legal-list">
-						<li><a href="#/" style="color: #fff;">Terms &amp; Conditions</a></li>
-						<li><a href="#/" style="color: #fff;">Privacy Policy</a></li>
-						<li style="color: #fff;">&copy; 2022 Copyright James the dev Inc.</li>
-					</ul>
-				</section>
-			</footer>
+			<div class="card restaurant">
+				<h3 class="card-headers">Restaurant website</h3>
+				<a href="https://mustgrind4life25.github.io/Luxurymotors.github.io/" target="_blank"><img src="https://github.com/Mustgrind4life25/julianwebsite.github.io/blob/main/img/restaurant-web-pic.PNG?raw=true" alt=""></a>
+			</div>
+		</div>
+	</section>
 
-		</section>
+	<!--Contact section-->
+	<section id="contact">
+		<div class="contact-container">
+			<h1 class="contact-header">Contact</h1>
+			<form name="contactHire" data-netlify="true">
+				<label for="name">Name</label>
+				<input id="name" type="text" placeholder="name">
+				<label for="email">Email</label>
+				<input id="email" class="email" type="email" placeholder="jane@mail.com">
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<button class="form-btn">Submit</button>
+			</form>
+		</div>
+	</section>
 
-
-	</div>
+	<!---Footer section--->
+	<section id="footer">
+		<div class="footer-icon">
+			<a class="github-link" href="https://github.com/Mustgrind4life25?tab=repositories" target="_blank">Github</a>
+		</div>
+	</section>
 
 	<script src="js/app.js"></script>
 </body>
